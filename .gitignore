@@ -1,0 +1,23 @@
+# Packaged skill bundles — built by scripts/package.sh, attached to releases
+dist/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*~
+
+# Local-only Claude state (in case someone clones into an active workspace)
+.claude/local/
+.claude/cache/
+.claude/.session/
+
+# Secrets — MCP configs should be sanitized before commit, this is a safety net
+**/secrets.json
+**/*.secret.*
+.env
+.env.*
+!.env.example
