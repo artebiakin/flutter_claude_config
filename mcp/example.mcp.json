@@ -1,6 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/mcp.json",
   "mcpServers": {
+    "dart": {
+      "command": "dart",
+      "args": ["mcp-server"]
+    },
     "filesystem": {
       "command": "npx",
       "args": [
